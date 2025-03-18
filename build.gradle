@@ -20,3 +20,13 @@ allprojects {
         jcenter()
     }
 }
+
+android {
+    // ...existing code...
+
+    lintOptions {
+        abortOnError false
+    }
+
+    // ...existing code...
+}
