@@ -8,8 +8,8 @@ android {
         applicationId "ch.datatrans.android.sample"
         minSdkVersion 24
         targetSdkVersion 29
-        versionCode 6
-        versionName "0.0.6"
+        versionCode project.hasProperty('buildNumber') ? project.buildNumber.toInteger() : 1
+        versionName "1.0.${project.hasProperty('buildNumber') ? project.buildNumber : 0}"
     }
 
     compileOptions {
