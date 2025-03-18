@@ -2,4 +2,8 @@
 <resources>
     <!-- showcasing a custom translation for the "Transmitting..." Dialog for language=fr -->
     <string name="nw_indicator_message">Transmission en cours... Yay!</string>
+    <string name="app_name">Nom de l'application</string>
+    <string name="action_autofill">Remplir les données de test</string>
+    <string name="nw_error_button_cancel">Annuler</string>
+    <!-- Add other translations as needed -->
 </resources>
