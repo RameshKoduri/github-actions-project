@@ -24,8 +24,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    - name: Set build number
+      run: echo "BUILD_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
+
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew build -PbuildNumber=${{ env.BUILD_NUMBER }}
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
